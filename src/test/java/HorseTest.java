@@ -50,4 +50,16 @@ public class HorseTest {
         String fieldValue = (String) horseName.get(horse);
         assertEquals("qwerty", fieldValue);
     }
+
+    @Test
+    public void getSpeedTest() {
+        Horse horse = new Horse("name", 1, 1);
+        assertEquals(1, horse.getSpeed());
+    }
+
+    @Test
+    public void getDistanceTest() {
+        Horse horse = new Horse("name", 1, 1);
+        assertEquals(1, horse.getDistance());
+    }
 }
